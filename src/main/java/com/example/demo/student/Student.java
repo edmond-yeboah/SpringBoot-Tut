@@ -19,7 +19,7 @@ public class Student {
     )
 
 
-    private Integer id;
+    private Long id;
     private String name;
     private String email;
     private String phoneNumber;
@@ -29,11 +29,11 @@ public class Student {
     public Student() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -97,7 +97,7 @@ public class Student {
         this.age = age;
     }
 
-    public Student(Integer id, String name, String email, String phoneNumber, LocalDate dob, Integer age) {
+    public Student(Long id, String name, String email, String phoneNumber, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
