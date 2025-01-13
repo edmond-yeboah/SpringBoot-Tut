@@ -14,7 +14,6 @@ import java.util.Optional;
 public class StudentService {
     private final StudentRepository studentRepository;
 
-    @Autowired
     public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
     }
@@ -24,7 +23,6 @@ public class StudentService {
     }
 
     public void addStudent(Student student) {
-        System.out.println(student);
         Optional<Student> studentOptional = studentRepository.findStudentByEmail(student.getEmail());
 
         if (studentOptional.isPresent()) {
